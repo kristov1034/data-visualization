@@ -43,10 +43,10 @@ class WriteHtml(object):
         create entry for one plot based on the return value
         of the plotting function
         """
-        self.file_handle.write('to be implemented', plotstring, '\n')
+        self.file_handle.write('to be implemented' + plotstring + '\n')
 
     def add_table(self, tablecontent):
         """
         create table in html style
         """
-        self.file_handle.write('to be implemented', tablecontent, '\n')
+        self.file_handle.write('to be implemented' + tablecontent + '\n')

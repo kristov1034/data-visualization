@@ -11,8 +11,8 @@ def json_read(filename):
     with open(filename, 'r') as thefile:
         json_data = json.load(thefile)
 
-    for k in json_data.keys():
-        print k
+    #for k in json_data.keys():
+    #    print k
 
     themeasurement = json_data["sensorData"]
 
@@ -20,7 +20,7 @@ def json_read(filename):
     thevalue = []
 
     for mpoint in themeasurement:
-        print mpoint["time"]
+        #print mpoint["time"]
 
         # convert unix time to human readable time (WTF: 1000?)
         tmptime = datetime.datetime.utcfromtimestamp(
